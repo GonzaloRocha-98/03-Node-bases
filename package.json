@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/GonzaloRocha-98/03-Node-bases/issues"
   },
-  "homepage": "https://github.com/GonzaloRocha-98/03-Node-bases#readme"
+  "homepage": "https://github.com/GonzaloRocha-98/03-Node-bases#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
