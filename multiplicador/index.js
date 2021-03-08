@@ -1,10 +1,13 @@
 const fs = require('fs');
 const {operacion} = require('./operacion');
 
-const multiplicar = (base)=>{
-    console.log(`----Tabla del ${base}-----`);
-    resultado = operacion(base);
-    fs.writeFileSync(`./tablas/tabla-del-${base}`,resultado);
+const multiplicar = (base, limite,v)=>{
+    resultado = operacion(base,limite);
+    if(v){    
+        console.log(resultado);
+        console.log(`----Tabla del ${base} hasta el ${limite}}-----`);
+    }
+    fs.writeFileSync(`./tablas/tabla-del-${base}-hasta-${limite}.txt`,resultado);
 }
 
 module.exports = {

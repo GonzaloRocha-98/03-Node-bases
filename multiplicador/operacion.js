@@ -1,9 +1,9 @@
-const operacion = (base)=>{
+const operacion = (base,limite)=>{
     resultado ='';
-    for (num = 0; num<=10; num++){
+    for (num = 0; num<=limite; num++){
         resultado+= `${base} * ${num} = ${base*num}\n`
-        console.log(`${base} * ${num} = ${base*num}`);
     }
+
     return resultado;
 }
 module.exports = {
